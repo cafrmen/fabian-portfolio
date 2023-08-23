@@ -20,7 +20,7 @@ div {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgba(53, 21, 93, 0.312);
 }
 
@@ -54,9 +54,10 @@ ul {
 }
 
 ul.show {
-    display: flex;
-    justify-content: space-between;
     width: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 li {
@@ -84,16 +85,13 @@ nav a:hover::after {
 }
 
 button.hamburger {
+    position: relative;
     display: none;
-}
-
-button.float {
-    float: inline-end;
 }
 
 main {
     width: 80%;
-    height: 80%;
+    height: 100vh;
     padding: 0 12vw;
     display: flex;
     align-items: center;
@@ -139,7 +137,7 @@ main {
         justify-content: flex-start;
     }
 
-    nav .hamburger {
+    button.hamburger {
         display: block;
         padding: 20px 0;
         border: 0;
@@ -150,6 +148,12 @@ main {
 
     ul {
         display: none;
+    }
+
+    li {
+        margin: 0;
+        padding: 0 3px;
+        font-size: small;
     }
 
     main {
