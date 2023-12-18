@@ -107,6 +107,7 @@ main {
 .section-one p {
     margin-bottom: 0;
     text-align: justify;
+    padding-bottom: 21px;
 }
 
 .section-two {
