@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(../font/poppins.ttf) format(truetype);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/project.jpg");
+    background-size: cover;
+    font-family: 'poppins', sans-serif;
+    color: aliceblue;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(53, 21, 93, 0.312);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12vw;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h1.hide {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    width: 360px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.show {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+li {
+    padding-left: 12px;
+
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: aliceblue;
+    transform: scale(0,1);
+    transform-origin: center;
+    transition: transform 0.3s;
+}
+
+nav a:hover::after {
+    transform: scale(1,1);
+}
+
+button.hamburger {
+    position: relative;
+    display: none;
+}
+
+main {
+    width: 80%;
+    height: 89vh;
+    padding: 0 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-one h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.section-one p {
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.section-two {
+    position: absolute;
+    right: 12vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-two a {
+    color: aliceblue;
+    padding: 7px;
+    font-size: 1.6em;
+    transition: 0.3s ease-in-out;
+}
+
+.section-two a:hover {
+    transform: scale(1.7);
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    header {
+        padding: 0 7vw;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    button.hamburger {
+        display: block;
+        padding: 20px 0;
+        border: 0;
+        background-color: transparent;
+        color: aliceblue;
+        font-size: 27px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    li {
+        margin: 0;
+        padding: 0 3px;
+        font-size: small;
+    }
+
+    main {
+        padding: 0 7vw;
+    }
+
+    h2 {
+        font-size: 1.17em;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .section-two {
+        right: 7vw;
+    }
+}

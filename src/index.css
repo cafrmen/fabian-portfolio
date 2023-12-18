@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../images/fabian1.jpg");
+    background-image: url("../images/fabian.jpg");
     background-size: cover;
     font-family: 'poppins', sans-serif;
     color: aliceblue;
@@ -31,12 +31,12 @@ header {
     padding: 0 12vw;
 }
 
-h3 {
+h1 {
     margin: 0;
     padding: 0;
 }
 
-h3.hide {
+h1.hide {
     display: none;
 }
 
@@ -91,7 +91,7 @@ button.hamburger {
 
 main {
     width: 80%;
-    height: 100vh;
+    height: 89vh;
     padding: 0 12vw;
     display: flex;
     align-items: center;
@@ -99,7 +99,17 @@ main {
     flex-direction: column;
 }
 
+.section-one {
+    background-color: rgba(53, 21, 93, 0.312);
+}
+
+.section-one h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 .section-one p {
+    margin-bottom: 0;
     text-align: justify;
 }
 
@@ -121,14 +131,19 @@ main {
     transform: scale(1.7);
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (min-width: 1200px) {
     body {
-        background-image: url("../images/fabianq0.jpg");
-        background-size: cover;
+        font-size: 1.5em;
     }
+}
 
+@media only screen and (max-width: 650px) {
     header {
         padding: 0 7vw;
+    }
+
+    h1 {
+        font-size: 1.2em;
     }
 
     nav {
@@ -158,6 +173,10 @@ main {
 
     main {
         padding: 0 7vw;
+    }
+
+    h2 {
+        font-size: 1.17em;
     }
 
     p {
