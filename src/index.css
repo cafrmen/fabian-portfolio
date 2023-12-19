@@ -124,7 +124,7 @@ main {
     color: aliceblue;
     padding: 7px;
     font-size: 1.6em;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .section-two a:hover {
@@ -134,6 +134,9 @@ main {
 @media only screen and (min-width: 1200px) {
     body {
         font-size: 1.5em;
+    }
+    nav>ul>li {
+        font-size: 0.7em;
     }
 }
 

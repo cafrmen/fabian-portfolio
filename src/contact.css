@@ -10,11 +10,39 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../images/project.jpg");
-    background-size: cover;
     font-family: 'poppins', sans-serif;
     color: aliceblue;
 }
+
+.bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url("../images/texture0.jpg") repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation 21s infinite; /* nombre de la animación */
+    opacity: .8;
+    visibility: visible;
+    z-index: -1;
+  }
+
+  @keyframes bg-animation {
+      0% { transform: translate(0,0) }
+      10% { transform: translate(-5%,-5%) }
+      20% { transform: translate(-10%,5%) }
+      30% { transform: translate(5%,-10%) }
+      40% { transform: translate(-5%,15%) }
+      50% { transform: translate(-10%,5%) }
+      60% { transform: translate(15%,0) }
+      70% { transform: translate(0,10%) }
+      80% { transform: translate(-15%,0) }
+      90% { transform: translate(10%,5%) }
+      100% { transform: translate(0, 0) }
+  }
 
 div {
     margin: 0;
@@ -99,15 +127,48 @@ main {
     flex-direction: column;
 }
 
+.section-one {
+    width: 100%;
+}
+
 .section-one h2 {
     margin-top: 0;
     padding-top: 0;
 }
 
-.section-one p {
-    margin-bottom: 0;
-    text-align: justify;
-    padding-bottom: 21px;
+.section-one form {
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section-one input, textarea {
+    padding: 5px;
+    border: 1px solid rgb(53, 21, 93);
+    border-radius: 3px;
+    font-family: 'poppins', sans-serif;
+    background-color: rgba(240, 248, 255, 0.8);
+}
+
+.section-one input::placeholder, textarea::placeholder {
+    color: rgba(53, 21, 93, 0.312);
+}
+
+.section-one button {
+    color: aliceblue;
+    background-color: rgba(53, 21, 93, 0.8);
+    padding: 7px;
+    font-family: 'poppins', sans-serif;
+    font-size: 1em;
+    border: 1px solid rgb(53, 21, 93);
+    border-radius: 3px;
+    transition: 0.5s ease-in-out;
+}
+
+.section-one button:hover {
+    color: rgb(53, 21, 93);
+    background-color: rgba(240, 248, 255, 0.5);
 }
 
 .section-two {
@@ -179,8 +240,8 @@ main {
         font-size: 1.17em;
     }
 
-    p {
-        font-size: small;
+    .section-one form {
+        width: 100%;
     }
 
     .section-two {

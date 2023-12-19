@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(../font/poppins.ttf) format(truetype);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(53, 21, 93, 0.312);
+    color: rgba(53, 21, 93, 0.8);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+}
+
+.bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('../images/texture0.jpg') repeat 0 0;
+    filter: invert(1);
+    background-repeat: repeat;
+    animation: bg-animation 13s infinite;
+    opacity: .3;
+    visibility: visible;
+    z-index: -1;
+  }
+
+  @keyframes bg-animation {
+      0% { transform: translate(0,0) }
+      10% { transform: translate(-5%,-5%) }
+      20% { transform: translate(-10%,5%) }
+      30% { transform: translate(5%,-10%) }
+      40% { transform: translate(-5%,15%) }
+      50% { transform: translate(-10%,5%) }
+      60% { transform: translate(15%,0) }
+      70% { transform: translate(0,10%) }
+      80% { transform: translate(-15%,0) }
+      90% { transform: translate(10%,5%) }
+      100% { transform: translate(0, 0) }
+  }
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: .712;
+    text-align: center;
+}
+
+main h1 {
+    margin: 3px;
+}
+
+main h3 {
+    margin: 3px;
+}
+
+main i {
+    margin: 3px;
+    font-size: 13em;
+    transition: ease-in-out .712s;
+    color: rgba(53, 21, 93, 0.8);
+    animation: beat 8s infinite ease-in-out;
+}
+
+@keyframes beat {
+    0% {
+        font-size: 13em;
+    }
+    25% {
+        font-size: 17em;
+    }
+    50% {
+        font-size: 13em;
+    }
+    75% {
+        font-size: 17em;
+    }
+    100% {
+        font-size: 13em;
+    }
+}
