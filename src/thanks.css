@@ -28,9 +28,9 @@ body {
     left: -50%;
     right: -50%;
     bottom: -50%;
-    width: 200%;
-    height: 200vh;
-    background: transparent url('../images/texture0.jpg') repeat 0 0;
+    width: 250%;
+    height: 250vh;
+    background: transparent url('../images/project.jpg') repeat 0 0;
     filter: invert(1);
     background-repeat: repeat;
     animation: bg-animation 13s infinite;

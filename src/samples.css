@@ -104,9 +104,10 @@ main {
     padding-top: 0;
 }
 
-video {
-    width: 100%;
-    height: auto;
+iframe {
+    margin: 0;
+    width: 55vw;
+    height: 30vw;
 }
 
 .section-one button {
@@ -229,9 +230,14 @@ video {
         text-align: justify;
     }
 
+    iframe {
+        width: 85vw;
+        height: 50vw;
+    }
+
     .buttons-control {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
     }
 
