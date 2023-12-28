@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../images/about.jpg");
+    background-image: url("../images/7.JPG");
     background-position: center;
     background-size: cover;
     font-family: 'poppins', sans-serif;
@@ -23,7 +23,7 @@ div {
     padding: 0;
     width: 100vw;
     min-height: 100vh;
-    background-color: rgba(53, 21, 93, 0.377);
+    background-color: rgba(53, 21, 93, 0.312);
 }
 
 header {
@@ -145,9 +145,6 @@ main {
 }
 
 @media only screen and (max-width: 650px) {
-    body {
-        background-image: url("../images/abouts.jpg");
-    }
     header {
         padding: 0 7vw;
     }
