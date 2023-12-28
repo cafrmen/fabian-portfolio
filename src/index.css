@@ -10,10 +10,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../images/fabian.jpg");
+    background-image: url("../images/about.jpg");
+    background-position: center;
     background-size: cover;
     font-family: 'poppins', sans-serif;
     color: aliceblue;
+    overflow: hidden;
 }
 
 div {
@@ -21,7 +23,7 @@ div {
     padding: 0;
     width: 100vw;
     min-height: 100vh;
-    background-color: rgba(53, 21, 93, 0.312);
+    background-color: rgba(53, 21, 93, 0.377);
 }
 
 header {
@@ -99,9 +101,11 @@ main {
     flex-direction: column;
 }
 
+/*
 .section-one {
-    background-color: rgba(53, 21, 93, 0.312);
+    background-color: rgba(53, 21, 93, 0.12);
 }
+*/
 
 .section-one h2 {
     margin-top: 0;
@@ -141,6 +145,9 @@ main {
 }
 
 @media only screen and (max-width: 650px) {
+    body {
+        background-image: url("../images/abouts.jpg");
+    }
     header {
         padding: 0 7vw;
     }

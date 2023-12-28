@@ -14,6 +14,7 @@ body {
     background-size: cover;
     font-family: 'poppins', sans-serif;
     color: aliceblue;
+    overflow: hidden;
 }
 
 div {

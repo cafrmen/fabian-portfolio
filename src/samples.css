@@ -14,6 +14,7 @@ body {
     background-size: cover;
     font-family: 'poppins', sans-serif;
     color: aliceblue;
+    overflow: hidden;
 }
 
 div {
@@ -110,20 +111,21 @@ iframe {
     height: 30vw;
 }
 
-.section-one button {
+.buttons-control button {
     margin: 13px 13px 13px 0;
     width: 34px;
     height: 34px;
     border: 3px solid aliceblue;
     border-radius: 7%;
     font-family: 'poppins', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
+    text-align: center;
     color: aliceblue;
     background-color: rgb(53, 21, 93);
     transition: 0.7s ease-in-out;
 }
 
-.section-one button:hover {
+.buttons-control button:hover {
     border-radius: 50%;
     border-color: rgb(53, 21, 93);
     color: rgb(53, 21, 93);
@@ -163,7 +165,7 @@ iframe {
 
     .section-one button {
         width: 50px;
-        height: auto;
+        height: 50px;
     }
 
     p {
@@ -172,6 +174,10 @@ iframe {
 }
 
 @media only screen and (max-width: 650px) {
+    body {
+        overflow: scroll;
+    }
+
     header {
         padding: 0 7vw;
     }
